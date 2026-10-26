@@ -4,7 +4,7 @@ description: Write clear, natural, human-readable Chinese prose ("说人话" / �
 ---
 # Human-Readable Chinese Writing
 
-Write and revise Chinese text for human readers. LLM output tends to be compressed, rare-word-heavy and template-driven. These rules push the other way: explicit connections, short modifier chains, concrete subjects, everyday collocations, consistent terms, varied rhythm, and no padding. See `README.md` for before/after examples and a ready-to-copy `AGENTS.md` snippet.
+Write and revise Chinese text for human readers. LLM output tends to be compressed, rare-word-heavy and template-driven. These rules push the other way: explicit connections, short modifier chains, concrete subjects, everyday collocations, consistent terms, varied rhythm, and no padding. Before/after examples are in `docs/examples.md`; a ready-to-copy `AGENTS.md` snippet is in `rules/AGENTS-snippet.md`.
 
 ## When to Use
 
