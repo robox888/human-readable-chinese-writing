@@ -2,11 +2,28 @@
 
 [中文](README.md) | **English**
 
-A writing skill for AI agents that write Chinese. Seven checkable rules for text where every word is familiar but the sentence still won't go in.
+> "Not human. Too AI. I don't want to read this."
+>
+> "Did you even read this yourself? Use AI properly. Don't be lazy."
+>
+> "This report was written by AI, wasn't it? Where's your own thinking?"
+>
+> "It's well written... it just doesn't sound like you."
+>
+> "You did all this this week? News to me."
+
+If you use AI to write reports in Chinese, you've probably heard one of these from a manager. (Translated from Chinese. The first two come from the author's own experience; the rest from public articles and posts. Originals and sources: [docs/boss-quotes.md](docs/boss-quotes.md).)
+
+![What is the boss actually complaining about: 13 manager comments grouped by complaint](assets/boss-complaints.en.svg)
+
+The complaints fall into three groups:
+- **Hard to read, obviously AI**: this repo. Seven checkable writing rules for AI agents that write Chinese.
+- **Doesn't sound like you, empty, inflated**: you need to work out what you're saying first. Use the companion skill [think-before-slides](https://github.com/robox888/think-before-slides) (Chinese).
+- **Did you even read it?**: no tool fixes this. Read it yourself before sending.
 
 ---
 
-## You already know this problem
+## The same habits show up in English
 
 Read this sentence:
 
@@ -19,7 +36,7 @@ It sounds like a modern LLM. That's the opening line of [Clark, Martin & Mahowal
 - an inanimate subject doing something only living things do ("a sentence ... eating")
 - stacked nouns forming a rare phrase ("reader-patience budget")
 
-**Chinese AI text has the same habits, and Chinese has no spaces between words to help the reader parse them.** This skill makes those habits visible and gives the agent a rule for each one.
+**Chinese AI text has the same habits, and Chinese has no spaces between words to help the reader parse them.** This skill makes those habits visible and gives the agent a rule for each one. A worked example, a weekly report rewritten step by step, is on the [Chinese page](README.md#一份被打回的周报).
 
 ---
 
@@ -56,11 +73,7 @@ When you ask the agent to write, polish, or "de-AI" Chinese text, it follows the
 
 **Rules only**: paste [rules/AGENTS-snippet.md](rules/AGENTS-snippet.md) into your project's `AGENTS.md`, `CLAUDE.md`, or system prompt. The rules are written in Chinese, which is what the model needs when it writes Chinese.
 
----
-
-## Companion: think first, then write
-
-Sometimes a report reads as "too AI" because it's hard to read; sometimes because it never decided what to say. This skill handles the first. For the second, use the companion skill **[think-before-slides](https://github.com/robox888/think-before-slides)** (Chinese): it helps you settle the goal, the evidence, and a page-by-page outline before writing.
+**Use both**: settle the goal, evidence, and outline with [think-before-slides](https://github.com/robox888/think-before-slides) first, then write the text with this skill.
 
 ---
 
@@ -69,7 +82,7 @@ Sometimes a report reads as "too AI" because it's hard to read; sometimes becaus
 A cluster of 2026 papers looked at this directly:
 
 - One explanation is post-training. Models are increasingly trained on math, code, and reasoning, where a correct answer is rewarded and a clear one is not. Long outputs can also be penalized, which pushes models to pack more information into fewer words. Clark et al. offer a length-penalty fine-tuning experiment as a proof of concept.
-- The result: more stacked nouns, rare word combinations, and abstract subjects. In one study, LLM rewrites had 2.66% fewer words but a 1.57% longer predicted reading time per word.
+- Researchers observed more stacked nouns, rare word combinations, and abstract subjects in AI text than in human writing. In one study, LLM rewrites had 2.66% fewer words but a 1.57% longer predicted reading time per word.
 - Models also rotate synonyms, reuse stock phrases, and give several overlapping answers. In a hardware-description-language Q&A study, engineers flagged 65.7% of LLM answers as redundant, compared with 4.4% of accepted human answers.
 
 Sources, key numbers, and how strong the evidence is for each rule: [docs/evidence.en.md](docs/evidence.en.md).
@@ -84,7 +97,9 @@ Sources, key numbers, and how strong the evidence is for each rule: [docs/eviden
 | `rules/AGENTS-snippet.md` | AI | Rules to paste into `AGENTS.md` / `CLAUDE.md` |
 | `README.md` / `README.en.md` | People | This page |
 | `docs/examples.md` | People | All rewrite examples (Chinese) |
+| `docs/boss-quotes.md` | People | The 13 manager comments behind the chart, with sources (Chinese) |
 | `docs/evidence.md` / `docs/evidence.en.md` | People | Research basis and evidence strength |
+| `assets/` | People | Images; `assets/src/` holds the chart data and the script that draws it |
 
 ---
 
@@ -93,6 +108,7 @@ Sources, key numbers, and how strong the evidence is for each rule: [docs/eviden
 - Only 1 of the 9 papers studies Chinese. Applying the rest to Chinese is an inference.
 - Thresholds like "two layers" and "two sentences" are rules of thumb; the papers don't give them.
 - The over-answering study also found that participants rated the LLM answer as more readable in 58.3% of cases. Readable is not always the same as concise or accurate.
+- The manager-comment sample is only 13 items, mostly second-hand; it shows rough categories, not proportions.
 - The rules address readability. Whether the content is correct needs a separate check.
 
 ## Contributing

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 560" width="1220" height="560" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, Helvetica, Arial, sans-serif">
+<rect width="1220" height="100%" fill="#FFFDF8" rx="16"/>
+<text x="40" y="58" font-size="30" font-weight="700" fill="#2B2B2B">What is the boss actually complaining about?</text>
+<text x="40" y="92" font-size="17" fill="#6B6B6B">13 comments from managers, grouped by complaint</text>
+<circle cx="150" cy="215" r="88" fill="#FC8D59" opacity="0.18"/>
+<circle cx="150" cy="215" r="74" fill="#FC8D59"/>
+<text x="150" y="227" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle">3<tspan font-size="16" font-weight="400"></tspan></text>
+<text x="150" y="335" font-size="19" font-weight="700" fill="#2B2B2B" text-anchor="middle">Obviously AI</text>
+<text x="150" y="362" font-size="14" fill="#7A7A7A" text-anchor="middle">“Clearly AI-written. Redo it.”</text>
+<circle cx="365" cy="215" r="78" fill="#FDBB84" opacity="0.18"/>
+<circle cx="365" cy="215" r="64" fill="#FDBB84"/>
+<text x="365" y="227" font-size="38" font-weight="700" fill="#5A2A00" text-anchor="middle">2<tspan font-size="16" font-weight="400"></tspan></text>
+<text x="365" y="335" font-size="19" font-weight="700" fill="#2B2B2B" text-anchor="middle">Can't get through it</text>
+<text x="365" y="362" font-size="14" fill="#7A7A7A" text-anchor="middle">“Too AI. Don't want to read it.”</text>
+<circle cx="650" cy="215" r="103" fill="#D7301F" opacity="0.18"/>
+<circle cx="650" cy="215" r="89" fill="#D7301F"/>
+<text x="650" y="227" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle">5<tspan font-size="16" font-weight="400"></tspan></text>
+<text x="650" y="335" font-size="19" font-weight="700" fill="#2B2B2B" text-anchor="middle">Doesn't sound like you</text>
+<text x="650" y="362" font-size="14" fill="#7A7A7A" text-anchor="middle">“Where's your own thinking?”</text>
+<circle cx="865" cy="215" r="78" fill="#FDBB84" opacity="0.18"/>
+<circle cx="865" cy="215" r="64" fill="#FDBB84"/>
+<text x="865" y="227" font-size="38" font-weight="700" fill="#5A2A00" text-anchor="middle">2<tspan font-size="16" font-weight="400"></tspan></text>
+<text x="865" y="335" font-size="19" font-weight="700" fill="#2B2B2B" text-anchor="middle">Empty or inflated</text>
+<text x="865" y="362" font-size="14" fill="#7A7A7A" text-anchor="middle">“You did all this?”</text>
+<circle cx="1070" cy="215" r="66" fill="#FDD49E" opacity="0.18"/>
+<circle cx="1070" cy="215" r="52" fill="#FDD49E"/>
+<text x="1070" y="227" font-size="38" font-weight="700" fill="#5A2A00" text-anchor="middle">1<tspan font-size="16" font-weight="400"></tspan></text>
+<text x="1070" y="335" font-size="19" font-weight="700" fill="#2B2B2B" text-anchor="middle">Did you even read it?</text>
+<text x="1070" y="362" font-size="14" fill="#7A7A7A" text-anchor="middle">“Don't be lazy.”</text>
+<path d="M70 398 v10 H445 v-10" fill="none" stroke="#C2410C" stroke-width="2.5"/>
+<text x="258" y="436" font-size="17" font-weight="700" fill="#C2410C" text-anchor="middle">Make it readable: this repo</text>
+<path d="M570 398 v10 H945 v-10" fill="none" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="758" y="436" font-size="17" font-weight="700" fill="#1D4ED8" text-anchor="middle">Think it through: think-before-slides</text>
+<path d="M990 398 v10 H1150 v-10" fill="none" stroke="#4B5563" stroke-width="2.5"/>
+<text x="1070" y="436" font-size="17" font-weight="700" fill="#4B5563" text-anchor="middle">Reread before sending</text>
+<text x="40" y="488" font-size="13" fill="#8A8A8A">Sample: 13 manager comments from public Chinese articles, posts, and the author's own experience (collected Oct 2026; mostly second-hand, not</text>
+<text x="40" y="508" font-size="13" fill="#8A8A8A">individually verified). Bigger, darker circles = more mentions. Small sample; not representative.</text>
+</svg>
