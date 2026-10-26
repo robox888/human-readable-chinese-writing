@@ -70,6 +70,12 @@ git clone https://github.com/robox888/human-readable-chinese-writing.git \
 
 ---
 
+## 配套：先想清楚，再说人话
+
+老板嫌稿子"太 AI"，有时是因为读不进去，有时是因为根本没想清楚要说什么。这个 Skill 只管前一种。动笔前先理清汇报目的、论据和逐页大纲，可以用配套的 **[想清楚再做 PPT（think-before-slides）](https://github.com/robox888/think-before-slides)**。
+
+---
+
 ## 为什么 AI 写的中文难读
 
 2026 年有一批研究专门回答了这个问题：

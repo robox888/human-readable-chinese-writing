@@ -58,6 +58,12 @@ When you ask the agent to write, polish, or "de-AI" Chinese text, it follows the
 
 ---
 
+## Companion: think first, then write
+
+Sometimes a report reads as "too AI" because it's hard to read; sometimes because it never decided what to say. This skill handles the first. For the second, use the companion skill **[think-before-slides](https://github.com/robox888/think-before-slides)** (Chinese): it helps you settle the goal, the evidence, and a page-by-page outline before writing.
+
+---
+
 ## Why AI text got harder to read
 
 A cluster of 2026 papers looked at this directly:
