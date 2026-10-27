@@ -1,0 +1,23 @@
+name: 规则不适用的场景
+description: 某条规则在某种文本里效果不好，或者适得其反
+title: "[规则] "
+labels: ["rule-feedback"]
+body:
+  - type: input
+    id: rule
+    attributes:
+      label: 哪一条规则
+      description: 规则编号 1–7，或"改写不改原意"。
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 什么场景，出了什么问题
+      description: 例如法律文本、诗歌、固定术语、公文格式。最好附一段例子。
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 你建议怎么改

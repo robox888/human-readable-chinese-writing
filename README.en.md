@@ -1,6 +1,14 @@
+<p align="center">
+  <img src="assets/logo.svg" width="96" alt="Make AI write Chinese like a human">
+</p>
+
 # Make AI Write Chinese Like a Human
 
 [中文](README.md) | **English**
+
+A Chinese writing skill for AI agents: seven checkable rules for clearer prose, with meaning preservation as the first requirement. Use it to draft, rewrite, or review Chinese reports, articles, posts, and documentation.
+
+[Install and try it](#get-started) · [Changelog](CHANGELOG.md) · [Citation](CITATION.cff)
 
 > "Not human. Too AI. I don't want to read this."
 >
@@ -58,6 +66,8 @@ Rule 0 sits above all of them: **a rewrite must not change the meaning.** If the
 
 More examples (in Chinese) are in [docs/examples.md](docs/examples.md).
 
+In rule 1, use "we judge the impact limited" only if the author confirms that this was the actual reason. Do not add that judgment when the source does not support it.
+
 ---
 
 ## Get started
@@ -69,7 +79,30 @@ git clone https://github.com/robox888/human-readable-chinese-writing.git \
   ~/.claude/skills/human-readable-chinese-writing
 ```
 
-When you ask the agent to write, polish, or "de-AI" Chinese text, it follows the 7 rules and checks each one before handing the text back. Other tools that read `SKILL.md` work the same way: put the folder in their skills directory.
+For a project-only installation, clone into the project's `.claude/skills/` directory. On Windows (PowerShell):
+
+```powershell
+git clone https://github.com/robox888/human-readable-chinese-writing.git "$HOME\.claude\skills\human-readable-chinese-writing"
+```
+
+The skill instructs the agent to follow the seven rules when writing or editing Chinese. Other tools that support `SKILL.md` can use their own skill directories; check the tool's discovery requirements.
+
+Start a new session and try:
+
+```text
+根据下面的工作记录，帮我写一段周报。不要夸大，不要编造缺失的信息：
+参加了评审会；搭了个数据看板；看了下用户反馈的分析流程。
+```
+
+Check that the output avoids stock openings, inflated credit such as "主导" (led), and invented outcomes. Missing details should be marked `[待确认]`. This is a basic output check; writing style alone does not prove that the skill was loaded.
+
+Update an installation cloned from this repository:
+
+```bash
+git -C ~/.claude/skills/human-readable-chinese-writing pull
+```
+
+To uninstall, remove the installed skill folder after saving any local changes you want to keep.
 
 **Rules only**: paste [rules/AGENTS-snippet.md](rules/AGENTS-snippet.md) into your project's `AGENTS.md`, `CLAUDE.md`, or system prompt. The rules are written in Chinese, which is what the model needs when it writes Chinese.
 
@@ -100,6 +133,8 @@ Sources, key numbers, and how strong the evidence is for each rule: [docs/eviden
 | `docs/boss-quotes.md` | People | The 13 manager comments behind the chart, with sources (Chinese) |
 | `docs/evidence.md` / `docs/evidence.en.md` | People | Research basis and evidence strength |
 | `assets/` | People | Images; `assets/src/` holds the chart data and the script that draws it |
+| `CHANGELOG.md` / `CITATION.cff` | People | Version history and citation metadata |
+| `.github/` | Contributors | Issue forms and automated file, version, and link checks |
 
 ---
 
@@ -110,10 +145,23 @@ Sources, key numbers, and how strong the evidence is for each rule: [docs/eviden
 - The over-answering study also found that participants rated the LLM answer as more readable in 58.3% of cases. Readable is not always the same as concise or accurate.
 - The manager-comment sample is only 13 items, mostly second-hand; it shows rough categories, not proportions.
 - The rules address readability. Whether the content is correct needs a separate check.
+- There is no controlled comparison of results with and without this skill yet; the observed benefits remain case-based.
+
+## FAQ
+
+**Will this change my meaning?** The rules require the agent to preserve it and mark missing facts. Models can still fail to follow instructions, so review the output.
+
+**Will this bypass AI detectors?** No. The goal is readability, and no detection outcome is guaranteed.
+
+**Are the numeric thresholds research findings?** No. "Two layers" and "two sentences" are practical heuristics, not measured cutoffs from the papers.
+
+**Do I need Claude Code?** No. Use a tool that supports skills, or paste [the rules snippet](rules/AGENTS-snippet.md) into your tool's instruction file or system prompt.
 
 ## Contributing
 
-Before/after rewrites and cases where a rule doesn't fit are welcome in [Issues](https://github.com/robox888/human-readable-chinese-writing/issues).
+Use the [issue forms](https://github.com/robox888/human-readable-chinese-writing/issues/new/choose) to share a before/after rewrite, a manager's comment, or a case where a rule does not fit. Remove private information before posting.
+
+See [CHANGELOG.md](CHANGELOG.md) for version history and [CITATION.cff](CITATION.cff) for citation metadata.
 
 ## License
 

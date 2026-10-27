@@ -1,0 +1,29 @@
+name: 改写前后对比
+description: 分享一段 AI 写的原文，和按规则改写后的版本
+title: "[对比] "
+labels: ["example"]
+body:
+  - type: textarea
+    id: before
+    attributes:
+      label: 改写前
+      description: AI 写出来的原文。涉及公司或个人信息的地方请先打码。
+    validations:
+      required: true
+  - type: textarea
+    id: after
+    attributes:
+      label: 改写后
+      description: 套用规则后的版本，或者你认为更好的版本。
+    validations:
+      required: true
+  - type: input
+    id: rules
+    attributes:
+      label: 涉及哪几条规则
+      description: 填规则编号，例如 1、2、7。拿不准可以留空。
+  - type: textarea
+    id: note
+    attributes:
+      label: 补充说明
+      description: 场景是什么（周报、文章、文档……）？改完是否还有不满意的地方？

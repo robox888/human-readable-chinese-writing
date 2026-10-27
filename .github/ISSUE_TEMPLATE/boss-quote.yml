@@ -1,0 +1,28 @@
+name: 老板原话
+description: 补充你听到的上级评价，帮助完善分类
+title: "[原话] "
+labels: ["quote"]
+body:
+  - type: textarea
+    id: quote
+    attributes:
+      label: 原话
+      description: 尽量写原话，不要概括。
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 出处
+      description: 公开文章或帖子的链接；如果是你自己听到的，写"亲历"。
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 你觉得它属于哪一类
+      options:
+        - 读不进去、一眼看出是 AI
+        - 不像你写的、没内容、夸大
+        - 你自己看过没有
+        - 不确定

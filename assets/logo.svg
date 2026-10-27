@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="让 AI 说人话">
+  <rect width="128" height="128" rx="28" fill="#2563eb"/>
+  <path d="M30 28h68a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12H66L44 112V92h-14a12 12 0 0 1-12-12V40a12 12 0 0 1 12-12z" fill="#ffffff"/>
+  <rect x="34" y="44" width="60" height="7" rx="3.5" fill="#2563eb"/>
+  <rect x="34" y="60" width="28" height="7" rx="3.5" fill="#2563eb"/>
+  <rect x="34" y="76" width="44" height="7" rx="3.5" fill="#2563eb"/>
+</svg>

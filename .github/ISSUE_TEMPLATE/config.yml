@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 想先理清要说什么，再写正文
+    url: https://github.com/robox888/think-before-slides
+    about: 内容、论据和大纲的问题，用配套的 think-before-slides

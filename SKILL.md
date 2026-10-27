@@ -1,7 +1,12 @@
 ---
 name: human-readable-chinese-writing
-description: Write clear, natural, human-readable Chinese prose ("说人话" / 去AI味), informed by 2026 arXiv research on why AI-generated text is harder to read (processing-cost features, per-word reading time, Uniform Information Density, Chinese eye-tracking surprisal, stylometric footprints, over-answering). Use whenever the user asks to write, draft, polish, rewrite, or review Chinese text for human readers, asks AI to "说人话", remove "AI味", improve readability (提升可读性), or create Agents.md writing guidelines.
+description: Write, rewrite, or review Chinese text so human readers can read it easily, and remove the "AI味". Use when the user asks to write, draft, polish, or review Chinese reports, articles, posts, tutorials, emails, or docs; asks AI to "说人话", "去AI味", or "提升可读性"; asks why a Chinese passage feels dense or tiring; or wants Chinese writing rules for AGENTS.md / CLAUDE.md. Preserves the author's meaning and marks missing facts as [待确认].
+license: MIT
+metadata:
+  version: "0.1.0"
+  author: robox888
 ---
+
 # Human-Readable Chinese Writing
 
 Write and revise Chinese text for human readers. LLM output tends to be compressed, rare-word-heavy and template-driven. These rules push the other way: explicit connections, short modifier chains, concrete subjects, everyday collocations, consistent terms, varied rhythm, and no padding. Before/after examples are in `docs/examples.md`; a ready-to-copy `AGENTS.md` snippet is in `rules/AGENTS-snippet.md`.
@@ -17,17 +22,12 @@ Write and revise Chinese text for human readers. LLM output tends to be compress
 
 Rewriting for readability must not change facts, stance, certainty, scope, numbers, or causal direction. When adding a connector or explanation would require information the source does not contain (a cause, a reason, a number), do not invent it. Mark it as `[待确认: ...]` or ask the user.
 
-## Evidence Base and How Strong It Is
+## Evidence Base
 
-The rules are informed by the papers below. Most of them study English; only Zhu et al. study Chinese. Applying the findings to Chinese is an inference, and the numeric thresholds in the steps (two layers, two sentences, 6–12 characters) are practical heuristics, not values from the papers.
+The rules draw on nine 2026 arXiv papers. Each step below names its basis inline; full citations, key numbers, and evidence strength are in `docs/evidence.md`. Two caveats apply to every step:
 
-1. Clark, Martin & Mahowald (2026), *Why is AI-generated language so hard to understand?*, [arXiv:2610.29162](https://arxiv.org/abs/2610.29162). Collects text from 14 models; compared with human writing, all nine frontier / near-frontier models use more inanimate subjects with animate verbs and more low-frequency n-grams, and most also use longer dependencies, more stacked nouns, and more reduced object relatives. Also examines denominal verbs. Hypothesis: post-training for math / code / reasoning creates pressure for information density; a length-penalty fine-tuning experiment is offered as proof-of-concept.
-2. Cekini et al. (2026), *The Cognitive Cost of LLM Writing*, [arXiv:2610.23715](https://arxiv.org/abs/2610.23715). On 496 human/LLM-rewrite pairs, a reading-time model trained on English eye-tracking data predicts LLM rewrites to be shorter (−2.66% words) but slower per word (+1.57%), with longer words (+6.06% characters), less frequent words (−7.61% mean frequency), and higher lexical diversity (MTLD +31.83%).
-3. Li & Xu (2026), *Uniform Information Density-Based Preference Optimization (UIDPO)*, [arXiv:2610.14578](https://arxiv.org/abs/2610.14578). Rewards responses whose information density is locally linear ("piecewise linearity"): a large density range is allowed globally, while local transitions are kept uniform. In an English complement-clause analysis, UIDPO correctly favored "necessary *that*" in 36.57% more cases than the SFT baseline.
-4. Zhu et al. (2026), *A Systematic Analysis of the Predictive Power of LM Surprisal in Reading Chinese*, [arXiv:2610.04898](https://arxiv.org/abs/2610.04898). LM surprisal predicts Mandarin reading times on three eye-tracking corpora (GECO-CN, HKP, MECO), but scaling is corpus-specific. On HKP (news), checkpoints whose surprisal stays closer to local bigram/trigram statistics predict reading times better.
-5. Shan, Lee & Hao (2026), *AI Writers Have a Consistent Stylometric Footprint, but AI Editors Do Not*, [arXiv:2608.27855](https://arxiv.org/abs/2608.27855); El Attar et al. (2026), *A Systematic Analysis of Linguistic Features in AI-Generated Text Detection*, [arXiv:2606.04177](https://arxiv.org/abs/2606.04177). Across 8 LLMs / 5 domains (Shan) and 27 LLMs / 10 domains (El Attar), lexical diversity is the most robust signal of AI-generated text; Shan also finds entropy about +1 SD and lexical diversity about +2 SD above human text.
-6. Massaro (2026), *Literary Non-Style in LLM-Generated Text*, [arXiv:2607.17228](https://arxiv.org/abs/2607.17228): LLM text leans on stock higher-order n-grams (e.g. "despite these challenges"). Hu et al. (2026), *When LLMs Over-Answer*, [arXiv:2607.17063](https://arxiv.org/abs/2607.17063): in hardware-description-language Q&A, engineers flagged 65.7% of LLM answers as redundant (vs 4.4% of accepted human answers) and 69.1% as verbose (vs 5.8%).
-7. Zhu et al. (2026), *Large Language Models Do Not Always Need Readable Language (BabelTele)*, [arXiv:2606.19857](https://arxiv.org/abs/2606.19857): when prompted to drop human readability as a constraint, LLMs produce opaque compressed text that keeps 99.5% semantic fidelity at 27.9% of the original length. Model-side recoverability and human readability can be partially decoupled.
+- Only one of the nine papers (Zhu et al., [arXiv:2610.04898](https://arxiv.org/abs/2610.04898)) studies Chinese. Applying the other findings to Chinese is an inference.
+- The numeric thresholds in the steps (two layers, two sentences per paragraph, 6–12 characters) are practical heuristics, not values from the papers.
 
 ## Steps
 
