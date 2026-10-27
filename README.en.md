@@ -72,6 +72,18 @@ In rule 1, use "we judge the impact limited" only if the author confirms that th
 
 ## Get started
 
+### WorkBuddy expert
+
+The WorkBuddy edition packages this skill as **让 AI 说人话 (Human-Readable Chinese)**, with three entry points: rewrite a draft, turn notes into prose, or review without rewriting.
+
+- **Users:** after marketplace publication, find the expert in WorkBuddy’s expert marketplace and start a conversation. A marketplace detail link will be added after publication.
+- **Maintainers:** [download the expert ZIP](https://github.com/robox888/human-readable-chinese-writing/raw/refs/heads/codex/workbuddy-expert/dist/human-readable-chinese-writing-workbuddy-0.1.0.zip) and submit it through the WorkBuddy open platform. Do not upload GitHub’s full source archive as an expert package.
+- **Branches:** `main` holds the general skill; [`codex/workbuddy-expert`](https://github.com/robox888/human-readable-chinese-writing/tree/codex/workbuddy-expert) maintains the expert wrapper and upload ZIP. See the [packaging and submission guide](https://github.com/robox888/human-readable-chinese-writing/blob/codex/workbuddy-expert/WORKBUDDY.md) (Chinese).
+
+The package is prepared for submission. WorkBuddy import, runtime behavior, and marketplace review have not yet been verified.
+
+### Claude Code skill
+
 **Install as a skill** (Claude Code shown):
 
 ```bash

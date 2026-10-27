@@ -31,6 +31,18 @@
 
 ## 快速开始
 
+### WorkBuddy：以专家形式使用
+
+WorkBuddy 版封装为「让 AI 说人话」专家，适合直接改稿、把记录整理成文、或只评不改。
+
+- **使用者**：上架后，在 WorkBuddy「专家·技能·连接器 → 专家」中找到「让 AI 说人话」，点击「召唤专家」，贴入文字即可。市场详情链接待上架后补充。
+- **维护者**：[下载专家上传包](https://github.com/robox888/human-readable-chinese-writing/raw/refs/heads/codex/workbuddy-expert/dist/human-readable-chinese-writing-workbuddy-0.1.0.zip)，在 WorkBuddy 开放平台提交并完成平台要求的审核步骤。不要把 GitHub 的整个源码 ZIP 当作专家包上传。
+- **分支管理**：`main` 维护通用技能；[`codex/workbuddy-expert`](https://github.com/robox888/human-readable-chinese-writing/tree/codex/workbuddy-expert) 维护专家配置、头像和上传包。[打包与上架说明](https://github.com/robox888/human-readable-chinese-writing/blob/codex/workbuddy-expert/WORKBUDDY.md)。
+
+当前提供的是待提交的专家包，尚未验证 WorkBuddy 导入、实际调用或市场审核结果。
+
+### Claude Code：安装为 Skill
+
 **装成 Skill**（Claude Code）：
 
 ```bash
