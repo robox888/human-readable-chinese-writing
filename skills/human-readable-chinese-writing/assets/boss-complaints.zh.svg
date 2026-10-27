@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 560" width="1220" height="560" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, Helvetica, Arial, sans-serif">
+<rect width="1220" height="100%" fill="#FFFDF8" rx="16"/>
+<text x="40" y="58" font-size="30" font-weight="700" fill="#2B2B2B">老板到底在嫌什么？</text>
+<text x="40" y="92" font-size="17" fill="#6B6B6B">13 条上级评价，按嫌弃的点归类</text>
+<circle cx="150" cy="215" r="88" fill="#FC8D59" opacity="0.18"/>
+<circle cx="150" cy="215" r="74" fill="#FC8D59"/>
+<text x="150" y="227" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle">3<tspan font-size="16" font-weight="400">条</tspan></text>
+<text x="150" y="335" font-size="19" font-weight="700" fill="#2B2B2B" text-anchor="middle">一眼看出是 AI</text>
+<text x="150" y="362" font-size="14" fill="#7A7A7A" text-anchor="middle">“这一看就是 AI 写的，重写。”</text>
+<circle cx="365" cy="215" r="78" fill="#FDBB84" opacity="0.18"/>
+<circle cx="365" cy="215" r="64" fill="#FDBB84"/>
+<text x="365" y="227" font-size="38" font-weight="700" fill="#5A2A00" text-anchor="middle">2<tspan font-size="16" font-weight="400">条</tspan></text>
+<text x="365" y="335" font-size="19" font-weight="700" fill="#2B2B2B" text-anchor="middle">读不进去</text>
+<text x="365" y="362" font-size="14" fill="#7A7A7A" text-anchor="middle">“太 AI 了，不想看，懒得读。”</text>
+<circle cx="650" cy="215" r="103" fill="#D7301F" opacity="0.18"/>
+<circle cx="650" cy="215" r="89" fill="#D7301F"/>
+<text x="650" y="227" font-size="38" font-weight="700" fill="#FFFFFF" text-anchor="middle">5<tspan font-size="16" font-weight="400">条</tspan></text>
+<text x="650" y="335" font-size="19" font-weight="700" fill="#2B2B2B" text-anchor="middle">不像你写的</text>
+<text x="650" y="362" font-size="14" fill="#7A7A7A" text-anchor="middle">“没有你的思考。”</text>
+<circle cx="865" cy="215" r="78" fill="#FDBB84" opacity="0.18"/>
+<circle cx="865" cy="215" r="64" fill="#FDBB84"/>
+<text x="865" y="227" font-size="38" font-weight="700" fill="#5A2A00" text-anchor="middle">2<tspan font-size="16" font-weight="400">条</tspan></text>
+<text x="865" y="335" font-size="19" font-weight="700" fill="#2B2B2B" text-anchor="middle">空洞、夸大</text>
+<text x="865" y="362" font-size="14" fill="#7A7A7A" text-anchor="middle">“这周你做了这么多事？”</text>
+<circle cx="1070" cy="215" r="66" fill="#FDD49E" opacity="0.18"/>
+<circle cx="1070" cy="215" r="52" fill="#FDD49E"/>
+<text x="1070" y="227" font-size="38" font-weight="700" fill="#5A2A00" text-anchor="middle">1<tspan font-size="16" font-weight="400">条</tspan></text>
+<text x="1070" y="335" font-size="19" font-weight="700" fill="#2B2B2B" text-anchor="middle">你自己看过没有</text>
+<text x="1070" y="362" font-size="14" fill="#7A7A7A" text-anchor="middle">“请合理使用 AI，不要偷懒。”</text>
+<path d="M70 398 v10 H445 v-10" fill="none" stroke="#C2410C" stroke-width="2.5"/>
+<text x="258" y="436" font-size="17" font-weight="700" fill="#C2410C" text-anchor="middle">说人话：本仓库</text>
+<path d="M570 398 v10 H945 v-10" fill="none" stroke="#1D4ED8" stroke-width="2.5"/>
+<text x="758" y="436" font-size="17" font-weight="700" fill="#1D4ED8" text-anchor="middle">想清楚：think-before-slides</text>
+<path d="M990 398 v10 H1150 v-10" fill="none" stroke="#4B5563" stroke-width="2.5"/>
+<text x="1070" y="436" font-size="17" font-weight="700" fill="#4B5563" text-anchor="middle">交稿前自己读一遍</text>
+<text x="40" y="488" font-size="13" fill="#8A8A8A">样本：13 条来自公开文章、帖子与作者亲历的上级评价（2026-10 收集，多为转述，未逐条核实）。圆点越大、颜色越深，出现次数越多；</text>
+<text x="40" y="508" font-size="13" fill="#8A8A8A">样本小，不代表总体比例。</text>
+</svg>

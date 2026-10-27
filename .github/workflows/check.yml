@@ -14,3 +14,4 @@ jobs:
           python-version: "3.12"
       - run: pip install PyYAML==6.0.2
       - run: python .github/scripts/check.py
+      - run: python scripts/build_workbuddy.py --check

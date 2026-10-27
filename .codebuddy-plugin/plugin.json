@@ -1,0 +1,66 @@
+{
+  "name": "human-readable-chinese-writing",
+  "version": "0.1.0",
+  "description": "Draft, rewrite, and review readable Chinese while preserving meaning, facts, and uncertainty.",
+  "author": {
+    "name": "robox888",
+    "email": "ray881216@gmail.com"
+  },
+  "agents": [
+    "./agents/human-readable-chinese-writing.md"
+  ],
+  "skills": [
+    "./skills/human-readable-chinese-writing"
+  ],
+  "expertType": "agent",
+  "agentName": "human-readable-chinese-writing",
+  "displayName": {
+    "en": "Human-Readable Chinese",
+    "zh": "让 AI 说人话"
+  },
+  "profession": {
+    "en": "Chinese Writing Editor",
+    "zh": "中文写作与改稿顾问"
+  },
+  "displayDescription": {
+    "en": "Turn Chinese drafts, work notes, and articles into clear, natural prose. Preserve meaning and uncertainty, flag missing facts, and avoid invented claims.",
+    "zh": "帮你把中文初稿、工作记录和文章改得自然好读，保留原意、事实与不确定性，指出缺失信息，不编造内容。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "plugin": "human-readable-chinese-writing",
+  "homepage": "https://github.com/robox888/human-readable-chinese-writing/tree/codex/workbuddy-expert",
+  "license": "MIT",
+  "tags": [
+    {
+      "en": "Chinese Writing",
+      "zh": "中文写作"
+    },
+    {
+      "en": "Rewrite and Polish",
+      "zh": "改稿润色"
+    },
+    {
+      "en": "Readability Review",
+      "zh": "可读性评审"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Rewrite the following Chinese text to make it natural and easy to read without changing its meaning.",
+      "zh": "帮我把下面这段中文改得自然、好读，不要改原意。"
+    },
+    {
+      "en": "Turn my work notes into a weekly report. Avoid exaggeration and mark missing details.",
+      "zh": "根据我的工作记录写一段周报，不夸大，缺的信息标待确认。"
+    },
+    {
+      "en": "Review this draft without rewriting it yet. Point out what is hard to read and explain why.",
+      "zh": "先别改稿，指出这段话哪里难读、为什么。"
+    }
+  ],
+  "defaultInitPrompt": {
+    "en": "Rewrite the following Chinese text to make it natural and easy to read without changing its meaning.",
+    "zh": "帮我把下面这段中文改得自然、好读，不要改原意。"
+  }
+}
